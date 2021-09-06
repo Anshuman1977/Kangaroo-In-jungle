@@ -89,12 +89,12 @@ function draw() {
       gameState = END;
     }
     if(shrubsGroup.isTouching(kangaroo)){
-gameEnd.visible = true
+
       shrubsGroup.destroyEach();
     }
   }
   else if (gameState === END) {
-    
+    gameEnd.visible = true
     kangaroo.velocityY = 0;
     jungle.velocityX = 0;
     obstaclesGroup.setVelocityXEach(0);
